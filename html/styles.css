@@ -18,7 +18,7 @@
   border-top: 1em solid deepskyblue;
   border-bottom: 1em solid deepskyblue;
   overflow-y: auto;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -34,10 +34,68 @@
   margin-top: 1em;
   padding-top: 2em;
   padding-bottom:2em;	
-  position: fixed;
+  position: absolute;
   left: 0;
   top: 400px;
   text-align: center;
   width: 100%;
   z-index: 999;
+}
+
+.text2 {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+  box-sizing: border-box;
+  position: absolute;
+  left: 0px;
+  top: 700px;
+  width: 100%;
+  z-index: 1999;
+}
+
+.rainbow {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+  box-sizing: border-box;
+  position: absolute;
+  left: 75%;
+  top: 700px;
+  width: 100%;
+  z-index: 1999;
+   /* Chrome, Safari, Opera */
+  -webkit-animation: rainbow 5s infinite; 
+  
+  /* Internet Explorer */
+  -ms-animation: rainbow 5s infinite;
+  
+  /* Standar Syntax */
+  animation: rainbow 5s infinite; 
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes rainbow{
+	20%{color: red;}
+	40%{color: yellow;}
+	60%{color: green;}
+	80%{color: blue;}
+	100%{color: orange;}	
+}
+/* Internet Explorer */
+@-ms-keyframes rainbow{
+	20%{color: red;}
+	40%{color: yellow;}
+	60%{color: green;}
+	80%{color: blue;}
+	100%{color: orange;}	
+}
+
+/* Standar Syntax */
+@keyframes rainbow{
+	20%{color: red;}
+	40%{color: yellow;}
+	60%{color: green;}
+	80%{color: blue;}
+	100%{color: orange;}	
 }
